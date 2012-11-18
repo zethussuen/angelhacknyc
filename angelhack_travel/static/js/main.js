@@ -6,6 +6,8 @@ $(document).ready(function() {
   var m = date.getMonth();
   var y = date.getFullYear();
   
+  var which_map = typeof trip_id === 'undefined' ? user_id : trip_id;
+  
   var calendar = $('#calendar').fullCalendar({
     header: {
       left: '',
@@ -41,6 +43,18 @@ $(document).ready(function() {
     editable: true,  
     height: winHeight,
     columnFormat: "'Events'",
+    startParam: 'start__gte',
+    endParam: 'end__lte',
+    events: {
+        url: '/api/v1/event/?trip=' + which_map + '&format=json',
+        type: 'GET',
+        error: function() {
+            alert('Error Fetching Data');
+        },
+        success: function() {
+            alert("done");
+        }
+    }
   });
   updateTitle();
 

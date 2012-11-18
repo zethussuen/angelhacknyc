@@ -19,6 +19,10 @@
       <script type='text/javascript' src="/static/js/vendor/jquery-ui-1.9.1.custom.min.js"></script>
       <script type='text/javascript' src='/static/js/vendor/fullcalendar.js'></script>      
       <script src="/static/js/main.js"></script>
+      <script type='text/javascript'>
+        {% if trip_id %}var trip_id = "{{ trip_id }}";{% endif %}
+        {% if user_profile  %}var user_id = "{{ user_profile.id }}";{% endif %}
+      </script>
   </head>
   <body>
     <div class="event-container" id="event-container">

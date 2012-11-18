@@ -10,8 +10,8 @@ class Event(models.Model):
   geo_lon = models.CharField(max_length=200, blank=True)
   url = models.URLField(blank=True)
   notes = models.TextField(blank=True)
-  start = models.DateTimeField()
-  end = models.DateTimeField(blank=True, null=True)
+  start = models.IntegerField()
+  end = models.IntegerField(blank=True)
   trip = models.ForeignKey('Trip')
 
   # TODO: Implement geocoding on pre-save hook.
