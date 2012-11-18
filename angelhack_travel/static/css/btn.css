@@ -25,3 +25,33 @@
   border: 1px solid #7cc576;
   border-bottom: 3px solid #7cc576;
 }
+
+.btn-blue {
+  font-size: 14px;
+  color: #f0f0f0;
+  background: #2876c5;
+  border: 1px solid #1b5995;
+  border-bottom: 3px solid #1b5995;
+  margin-right: 10px;
+}
+
+.btn-blue:hover {
+  background: #2a7ccf;
+  border: 1px solid #1b5995;
+  border-bottom: 3px solid #1b5995;  
+}
+
+.btn-blueLight {
+  font-size: 14px;
+  color: #f0f0f0;
+  background: #62b9dc;
+  border: 1px solid #006d8e;
+  border-bottom: 3px solid #006d8e;
+}
+
+.btn-blueLight:hover {
+  background: #6dcef5;
+  border: 1px solid #006d8e;
+  border-bottom: 3px solid #006d8e;  
+}
+
