@@ -3,6 +3,13 @@ import os
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
+PROJECT_ROOT = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+
+SINGLY_CLIENT_ID = ''
+SINGLY_CLIENT_SECRET = ''
+# lvh.me is just a domain name for localhost
+SINGLY_REDIRECT_URI = 'http://33.33.33.10:8080/singly/authorize/callback'
+AUTH_PROFILE_MODULE = "singly.UserProfile"
 
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
@@ -68,6 +75,7 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    os.path.join(PROJECT_ROOT, "angelhack_travel/static"),
 )
 
 # List of finder classes that know how to find static files in
@@ -102,6 +110,7 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    os.path.join(PROJECT_ROOT, "angelhack_travel/templates"),
 )
 
 INSTALLED_APPS = (
@@ -113,6 +122,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admin',
     'tastypie',
+    'singly',
     'angelhack_travel.travel',
 )
 
