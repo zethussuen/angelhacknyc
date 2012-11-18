@@ -87,5 +87,10 @@ $(document).ready(function() {
   $('#cancel-add-edit').on('click', function(){
     $('#new-event-container').fadeToggle();    
   });
-
+  
+  function refreshCal() {
+      $('#calendar').fullCalendar('refetchEvents');
+  }
+  
+  var t=setInterval(refreshCal,5000);
 });
