@@ -7,9 +7,10 @@ PROJECT_ROOT = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 
 SINGLY_CLIENT_ID = ''
 SINGLY_CLIENT_SECRET = ''
-# lvh.me is just a domain name for localhost
 SINGLY_REDIRECT_URI = 'http://33.33.33.10:8080/singly/authorize/callback'
 AUTH_PROFILE_MODULE = "singly.UserProfile"
+
+BING_API_KEY = ''
 
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
