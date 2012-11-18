@@ -51,9 +51,6 @@ $(document).ready(function() {
         error: function() {
             alert('Error Fetching Data');
         },
-        success: function() {
-            alert("done");
-        }
     }
   });
   updateTitle();

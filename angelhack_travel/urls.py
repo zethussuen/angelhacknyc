@@ -13,6 +13,7 @@ v1_api.register(TripResource())
 
 urlpatterns = patterns('',
     url(r'^$', 'travel.views.home', name='home'),
+    url(r'^trip/$', 'travel.views.trip', name='trip'),
     url(r'^trip/(?P<trip_id>.*)/$', 'travel.views.trip', name='trip'),
     url(r'^get-trip/', 'travel.views.get_trip', name='get-trip'),
     url(r'^singly/', include('singly.urls')),
