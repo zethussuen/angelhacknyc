@@ -61,19 +61,19 @@ $(document).ready(function() {
     $('#new-event-container').fadeToggle();    
   }
 
-  $('#title-prev').click(function(){
+  $('#title-prev').on('click', function(){
     $('#calendar').fullCalendar('prev');
     updateTitle();
   });
-  $('#title-next').click(function(){
+  $('#title-next').on('click', function(){
     $('#calendar').fullCalendar('next');
     updateTitle();
   });
-  $('#title-new').click(function(){
+  $('#title-new').on('click', function(){
     addEvent();
   });
 
-  $('#cancel-add-edit').click(function(){
+  $('#cancel-add-edit').on('click', function(){
     $('#new-event-container').fadeToggle();    
   });
 
