@@ -1,0 +1,27 @@
+.btn {
+  padding: 5px 16px;
+  color: #777777;
+  background: #d7d7d7;
+  text-decoration: none;
+  border: 1px solid #ababab;
+  border-bottom: 3px solid #ababab;
+}
+
+.btn:hover {
+  background: #f0f0f0;
+  border: 1px solid #afafaf;
+  border-bottom: 3px solid #afafaf;
+}
+
+.btn-green {
+  color: white;
+  background: #7cc576;
+  border: 1px solid #68a663;
+  border-bottom: 3px solid #68a663;
+}
+
+.btn-green:hover {
+  background: #85d37e;
+  border: 1px solid #7cc576;
+  border-bottom: 3px solid #7cc576;
+}

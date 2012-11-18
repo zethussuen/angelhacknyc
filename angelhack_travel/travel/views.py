@@ -20,6 +20,7 @@ def home(request, template='index.html'):
 
     if request.user.is_authenticated():
         user_profile = request.user.get_profile()
+        template='main.html'
 
     response = render_to_response(
             template, locals(), context_instance=RequestContext(request)
